@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fullscreen Example</title>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var element = document.documentElement;
+        if (element.requestFullscreen) {
+          element.requestFullscreen();
+        } else if (element.webkitRequestFullscreen) {
+          element.webkitRequestFullscreen();
+        } else if (element.msRequestFullscreen) {
+          element.msRequestFullscreen();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <p>This website will automatically go fullscreen.</p>
+  </body>
+</html>
